@@ -21,7 +21,7 @@ classdef Goal_Stats < handle
 
         end
 
-        function self = gamePlayed(self)
+        function self = GamePlayed(self)
 
             self.gamesPlayed = self.gamesPlayed + 1;
         end
@@ -44,7 +44,7 @@ classdef Goal_Stats < handle
 
         function self = updatePercent(self)
 
-            self.percent = self.goalsAgainst / self.shotsAgainst;
+            self.percent = 1 - (self.goalsAgainst / self.shotsAgainst);
         end
     end
 end

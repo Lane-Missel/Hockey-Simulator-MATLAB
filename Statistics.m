@@ -46,7 +46,7 @@ classdef Statistics < handle
 
         function [] = GamePlayed(self)
 
-            self.gamesPlayed = self.GamePlayed + 1;
+            self.gamesPlayed = self.gamesPlayed + 1;
         end
 
     end

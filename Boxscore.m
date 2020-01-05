@@ -2,8 +2,6 @@ classdef Boxscore < handle
 
     properties
 
-        name
-
         score = 0;
         first = 0;
         second = 0;
@@ -15,9 +13,7 @@ classdef Boxscore < handle
 
     methods
 
-        function self = Boxscore(name)
-
-            self.name = name;
+        function self = Boxscore()
         end
 
         function self = AddTop(self)
@@ -34,12 +30,14 @@ classdef Boxscore < handle
 
             self.first = self.first + 1;
             self.score = self.score + 1;
+            self.shots = self.shots + 1;
         end
 
         function self = Second(self)
 
             self.second = self.second + 1;
             self.score = self.score + 1;
+            self.shots = self.shots + 1;
         end
     end
 end
