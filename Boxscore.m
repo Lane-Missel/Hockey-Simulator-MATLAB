@@ -30,12 +30,14 @@ classdef Boxscore < handle
 
             self.first = self.first + 1;
             self.score = self.score + 1;
+            self.shots = self.shots + 1;
         end
 
         function self = Second(self)
 
             self.second = self.second + 1;
             self.score = self.score + 1;
+            self.shots = self.shots + 1;
         end
     end
 end

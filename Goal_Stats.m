@@ -21,7 +21,7 @@ classdef Goal_Stats < handle
 
         end
 
-        function self = gamePlayed(self)
+        function self = GamePlayed(self)
 
             self.gamesPlayed = self.gamesPlayed + 1;
         end
