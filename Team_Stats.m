@@ -2,24 +2,24 @@ classdef Team_Stats < handle
 
     properties
 
-        wins
-        losses
-        ties
-        points
-        gamesPlayed
-        top
-        percent
-        shotsFor
-        shotsAgainst
-        goalsFor
-        goalsAgainst
+        wins = 0;
+        losses = 0;
+        ties = 0;
+        points = 0;
+        gamesPlayed = 0;
+        top = 0;
+        percent = 0;
+        shotsFor = 0;
+        shotsAgainst = 0;
+        goalsFor = 0;
+        goalsAgainst = 0;
 
     end
 
 
     methods
 
-        function self = Team_Stats(self)
+        function self = Team_Stats()
 
             wins = 0;
             losses = 0;
