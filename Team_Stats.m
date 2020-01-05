@@ -76,3 +76,4 @@ classdef Team_Stats < handle
             self.percent = self.wins / self.gamesPlayed;
         end
     end
+end
