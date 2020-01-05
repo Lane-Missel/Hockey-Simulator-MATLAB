@@ -19,7 +19,7 @@ classdef Team_Stats < handle
 
     methods
 
-        function self = Team_Stats()
+        function self = Team_Stats(self)
 
             wins = 0;
             losses = 0;
@@ -44,7 +44,7 @@ classdef Team_Stats < handle
         function self = Loss(self)
 
             self.losses = self.losses + 1;
-            self.gamesPlayed
+            self.gamesPlayed = self.gamesPlayed + 1;
         end
 
         function self = Tie(self)
@@ -54,15 +54,15 @@ classdef Team_Stats < handle
             self.points = self.points + 1;
         end
 
-        function self = updateGoals(self,for,against)
+        function self = updateGoals(self,For,against)
 
-            self.goalsFor = self.goalsFor + for;
+            self.goalsFor = self.goalsFor + For;
             self.goalsAgainst = self.goalsAgainst + against;
         end
 
-        function self = updateShots(self,for,against)
+        function self = updateShots(self,For,against)
 
-            self.shotsFor = self.shotsFor + for;
+            self.shotsFor = self.shotsFor + For;
             self.shotsAgainst = self.shotsAgainst + against;
         end
 
